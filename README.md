@@ -165,13 +165,36 @@ endmodule
 
 ## 📁 Project Files
 ```
-📂 Advanced-RISC-Microcontroller-Design-using-Verilog
-├── 📜 README.md # Project Overview
-├── 📂 src # Source Code │ ├── Adder.v │ ├── ALU.v │ ├── ControlUnit.v │ ├── DMem.v │ ├── instr_set.dat │ ├── Microcontroller.v │ ├── Microcontroller.v.bak │ ├── MicroController_tb.v │ ├── MicroController_tb.v.bak │ ├── MUX.v │ ├── PMem.v │ ├── test_1.txt │ ├── test_2.txt │ ├── Microcontroller.qpf # Quartus Prime Project File │ ├── Microcontroller.qsf # Quartus Settings File │ ├── Microcontroller.qws # Quartus Workspace File │ ├── Microcontroller_nativelink_simulation.rpt # Simulation Report │ ├── c5_pin_model_dump.txt # Pin Configuration
-├── 📂 docs # Documentation │ ├── Project_Report.pdf │ ├── architecture_diagram.png
-├── 📂 simulation # Test results & Waveforms │ ├── RTL_diagram.png │ ├── Timming_diagram_testbench.png ├── LICENSE # License file ├── .gitignore # Git ignore file
+Advanced-RISC-Microcontroller-Design-using-Verilog/
+├── 📜 README.md                   # Project Overview
+├── 📂 src/                        # Source Code
+│   ├── Adder.v                    # Adder Module
+│   ├── ALU.v                      # Arithmetic Logic Unit
+│   ├── ControlUnit.v              # Control Unit Module
+│   ├── DMem.v                     # Data Memory Module
+│   ├── instr_set.dat              # Instruction Set Data
+│   ├── Microcontroller.v          # Main Microcontroller Module
+│   ├── Microcontroller.v.bak      # Backup of Microcontroller Module
+│   ├── MicroController_tb.v       # Testbench for Microcontroller
+│   ├── MicroController_tb.v.bak   # Backup of Testbench
+│   ├── MUX.v                      # Multiplexer Module
+│   ├── PMem.v                     # Program Memory Module
+│   ├── test_1.txt                 # Test File 1
+│   ├── test_2.txt                 # Test File 2
+│   ├── Microcontroller.qpf        # Quartus Prime Project File
+│   ├── Microcontroller.qsf        # Quartus Settings File
+│   ├── Microcontroller.qws        # Quartus Workspace File
+│   ├── Microcontroller_nativelink_simulation.rpt  # Simulation Report
+│   ├── c5_pin_model_dump.txt      # Pin Configuration
+├── 📂 docs/                       # Documentation
+│   ├── Project_Report.pdf         # Project Report
+│   ├── architecture_diagram.png   # Architecture Diagram
+├── 📂 simulation/                 # Test Results & Waveforms
+│   ├── RTL_diagram.png            # RTL Diagram
+│   ├── Timming_diagram_testbench.png  # Timing Diagram from Testbench
+├── 📜 LICENSE                     # License File
+└── 📜 .gitignore                  # Git Ignore File
 ```
-
 ## 📜 References
 - Harvard Architecture: [Wikipedia](https://en.wikipedia.org/wiki/Harvard_architecture)
 - Verilog HDL: [IEEE Standard 1364-2005](https://standards.ieee.org/standard/1364-2005.html)
