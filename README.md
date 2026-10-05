@@ -106,9 +106,8 @@ This microcontroller is implemented using Verilog HDL, structured into modular c
 5. **Final Verification:** Validate through comprehensive simulations.
 
 ## 📄 Future Enhancements
-- **Pipeline Execution:** Improve performance through instruction pipelining.
-- **Enhanced ALU Operations:** Support additional arithmetic/logical functions.
-- **Interrupt Handling Mechanism:** Implement for real-time applications.
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/10ad34ca-f55e-43f9-a52f-84dee12e878f" />
 
 ## 📁 Project Files
 ```
