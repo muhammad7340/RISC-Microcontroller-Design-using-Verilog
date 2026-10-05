@@ -4,7 +4,8 @@
 
 [![Verilog](https://img.shields.io/badge/Verilog-HDL-blue)](https://en.wikipedia.org/wiki/Verilog)[![VHDL](https://img.shields.io/badge/VHDL-HDL-purple)](https://en.wikipedia.org/wiki/VHDL)[![Quartus Prime](https://img.shields.io/badge/Quartus%20Prime-Intel%20FPGA-green)](https://www.intel.com/content/www/us/en/software/programmable/quartus-prime/overview.html)[![ModelSim](https://img.shields.io/badge/ModelSim-Mentor%20Graphics-red)](https://www.mentor.com/products/fv/modelsim/) [![Xilinx Vivado](https://img.shields.io/badge/Xilinx%20Vivado-FPGA-orange)](https://www.xilinx.com/products/design-tools/vivado.html)  [![Digital Logic](https://img.shields.io/badge/Digital%20Logic-Design-brightgreen)](https://en.wikipedia.org/wiki/Digital_electronics)  [![Embedded Systems](https://img.shields.io/badge/Embedded%20Systems-Development-blue)](https://en.wikipedia.org/wiki/Embedded_system)  [![Computer Architecture](https://img.shields.io/badge/Computer%20Architecture-Hardware-orange)](https://en.wikipedia.org/wiki/Computer_architecture)  [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
- ![Microcontroller](/docs/Microcontroller.jpg)
+ ![Microcontroller](/docs/multicycle_microcotroller.jpg)
+
  
 ## 🚀 Overview
 This project presents a **custom-designed RISC-based microcontroller** implemented using Verilog, featuring a simplified instruction set, Harvard architecture, and non-pipelined execution. The design ensures efficient processing, reduced cycle time, and optimized resource utilization.
@@ -75,73 +76,7 @@ This microcontroller is implemented using Verilog HDL, structured into modular c
 - `memory.v`: Defines program and data memory.
 - `pc_adder.v`: Handles program counter incrementation.
 - `testbench.v`: Simulates and verifies the design.
-## 📂 Featured Code
-### 🔹 Control Unit (CU)
-```verilog
-module ControlUnit (
-    input [1:0] stage,
-    input [11:0] IR,
-    output reg PC_Enable, Acc_Enable, ALU_Enable,
-    output reg [3:0] ALU_Mode
-);
-
-always @(*) begin
-    {PC_Enable, Acc_Enable, ALU_Enable} = 3'b000;
-    ALU_Mode = 4'd0;
-
-    case (stage)
-        2'b01: PC_Enable = 1;
-        2'b10: Acc_Enable = 1;
-        2'b11: begin
-            ALU_Enable = 1;
-            ALU_Mode = IR[10:8];
-        end
-    endcase
-end
-endmodule
-```
-
-### 🔹 Arithmetic Logic Unit (ALU)
-```verilog
-module ALU (
-    input [7:0] Operand1, Operand2,
-    input [3:0] Mode,
-    output reg [7:0] Result
-);
-
-always @(*) begin
-    case (Mode)
-        4'b0000: Result = Operand1 + Operand2;
-        4'b0001: Result = Operand1 - Operand2;
-        4'b0010: Result = Operand1 & Operand2;
-        4'b0011: Result = Operand1 | Operand2;
-        default: Result = 8'd0;
-    endcase
-end
-endmodule
-```
-
-### 🔹 Multiplexer (MUX)
-```verilog
-module MUX (
-    input [7:0] In0, In1,
-    input Sel,
-    output [7:0] Out
-);
-assign Out = Sel ? In1 : In0;
-endmodule
-```
-
-### 🔹 Program Counter (PC) Adder
-```verilog
-module Adder (
-    input [7:0] In,
-    output [7:0] Out
-);
-assign Out = In + 1;
-endmodule
-```
-
+  
 ## ✅ Verification & Simulation
 ### 🔬 Sample Test 1: Finding Maximum of Three Numbers
 - Compares three numbers (e.g., `5, 12, 2`) and stores the largest in the accumulator.
