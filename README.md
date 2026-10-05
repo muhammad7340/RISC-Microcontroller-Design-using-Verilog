@@ -26,8 +26,6 @@ This project presents a **custom-designed RISC-based microcontroller** implement
 
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/1ac83aff-6d60-463a-8179-c9e2bbfff911" />
 
-
-
 ### 1️⃣ **Control Unit (CU)**
 Manages the execution flow by decoding instructions and generating control signals.
 
@@ -48,6 +46,9 @@ Selects appropriate input data for ALU and memory operations.
 - **Data Memory (DMem):** Stores data required for operations.
 
 ## 📜 Instruction Set
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/2048500d-6ff2-438b-91ec-3c0575da58e1" />
+
 ### 🔄 **Data Transfer Group**
 - `MOVAM`: Move accumulator value to memory.
 - `MOVMA`: Move memory value to accumulator.
@@ -70,6 +71,13 @@ Selects appropriate input data for ALU and memory operations.
 
 ### ⚙ **Machine Control Group**
 - `NOP`: No operation.
+
+
+
+
+## Timming and State Transition
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/29af9d9b-c253-4e27-853d-eb480632c00c" />
 
 ## 🛠️ Implementation using Verilog
 
@@ -95,7 +103,8 @@ This microcontroller is implemented using Verilog HDL, structured into modular c
 - Performs a sequence of logical and arithmetic operations.
 - **Simulation Results:** Correct values stored in Data Memory (DMem).
 
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/3aea3eed-eeb5-4102-b974-332e2135e9c0" />
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/b1eb75d4-c39a-41a6-bd80-d93177b1174e" />
+
 
 
 ## 📌 Methodology
