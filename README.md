@@ -23,6 +23,11 @@ This project presents a **custom-designed RISC-based microcontroller** implement
 - Microcontroller Design
  
 ## 🏗️ Architecture & Components
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/1ac83aff-6d60-463a-8179-c9e2bbfff911" />
+
+
+
 ### 1️⃣ **Control Unit (CU)**
 Manages the execution flow by decoding instructions and generating control signals.
 
@@ -67,6 +72,9 @@ Selects appropriate input data for ALU and memory operations.
 - `NOP`: No operation.
 
 ## 🛠️ Implementation using Verilog
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/13d977ba-d9ef-4db4-8327-aad897d55296" />
+
 This microcontroller is implemented using Verilog HDL, structured into modular components:
 
 - `control_unit.v`: Implements control logic.
@@ -76,6 +84,7 @@ This microcontroller is implemented using Verilog HDL, structured into modular c
 - `memory.v`: Defines program and data memory.
 - `pc_adder.v`: Handles program counter incrementation.
 - `testbench.v`: Simulates and verifies the design.
+
   
 ## ✅ Verification & Simulation
 ### 🔬 Sample Test 1: Finding Maximum of Three Numbers
@@ -85,6 +94,9 @@ This microcontroller is implemented using Verilog HDL, structured into modular c
 ### 🔬 Sample Test 2: Logical and Arithmetic Operations
 - Performs a sequence of logical and arithmetic operations.
 - **Simulation Results:** Correct values stored in Data Memory (DMem).
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/3aea3eed-eeb5-4102-b974-332e2135e9c0" />
+
 
 ## 📌 Methodology
 1. **Design & Planning:** Define architecture and instruction set.
