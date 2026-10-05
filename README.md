@@ -1,4 +1,4 @@
-# 🧮 Advanced RISC Microcontroller Design using Verilog
+# 🧮 Multicycle RISC style Microcontroller Design using Verilog
 
 
 
